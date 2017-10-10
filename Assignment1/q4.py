@@ -9,9 +9,9 @@ def isPrime(N):
 
     return True
 
-prime_list = []
-
 def factorize(N):
+    prime_list = []
+
     num = N
     product = 1
 
@@ -19,7 +19,7 @@ def factorize(N):
         prime_list.append(num)
 
     if isPrime(N):
-        return
+        return []
 
     for i in range(1, num+1, 1):
 
